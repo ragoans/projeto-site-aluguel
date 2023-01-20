@@ -1,0 +1,72 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor0: #000000;
+    --cor1: gray;
+    --cor2: white;
+    --cor3: #2fa866;
+    --cor4: #1a5c37;
+    --cor5: #063d1e;
+
+    --fonte-padrao:Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque:'Bebas Neue', 'cursive';
+    --fonte-android:'Android', 'cursive';
+}
+
+body {
+    width: 80%;
+    margin: auto;
+}
+
+div.logo {
+    height: 200px;
+    background-color: var(--cor0);
+}
+
+nav#menu {
+    background-color: var(--cor1);
+    
+}
+
+nav#menu > ul {
+    list-style-type: none;
+    display: flex;
+    
+}
+
+nav#menu li {
+    padding: 10px;
+}
+
+nav#menu a {
+    text-decoration: none;
+    color: var(--cor2);
+}
+
+div#box-imoveis {
+    height: 300px;
+    background-color: var(--cor1);
+    display: grid;
+    row-gap: 10px;
+    column-gap: 10px;
+    /*grid-template-columns: repeat(2, 1fr)*/
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    
+
+}
+
+div.imoveis {  
+    justify-content: center;
+    align-items: center;
+    width: inherit;
+    height: inherit;
+    background-color: rgb(202, 202, 202);
+    padding: 5px;    
+}
+
